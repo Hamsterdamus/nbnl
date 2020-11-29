@@ -1,0 +1,18 @@
+body {
+    background: #2A2928;
+    color: white;
+}
+
+aside {
+    float: left;
+    background: #2A2928;
+    width: 15%;
+    padding: 2.5%
+    color: white;
+}
+
+aside .logo{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block PageName %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <aside>
+        <span class="logo">billiard tournaments</span>
+        <h3>Меню</h3>
+        <ul>
+            <a href=""><li><i class="fab fa-font-awesome"></i> Главная страница</li></a>
+            <a href=""><li><i class="fas fa-headset"></i> Все текущие турниры</li></a>
+            <a href=""><li><i class="far fa-hand-paper"></i> Все будущие турниры</li></a>
+            <a href=""><li><i class="fas fa-hand-paper"></i> Все завершенные турниры</li></a>
+            <a href=""><li><i class="fas fa-users"></i> Все игроки</li></a>
+            <a href=""><li><i class="far fa-newspaper"></i> О сервисе</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
